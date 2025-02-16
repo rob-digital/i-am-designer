@@ -3,8 +3,8 @@
     height: 100vh;
     max-width: 100%;
     background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
+    background-attachment: unset;
+    background-size: cover !important;
 }
 
 .layout-main-container {
