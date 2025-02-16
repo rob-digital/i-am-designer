@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+@use './tailwind.css';
+@use './assets/layout/layout.scss';
+@use 'primeicons/primeicons.css';
+@use './assets/main/demo.scss';
+
+@font-face {
+    font-family: Inter;
+    src: url(../src/assets/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf) format("opentype");
+  }
+body {
+    font-family: Inter;
+}

@@ -1,0 +1,59 @@
+<div class="layout-wrapper" [ngClass]="containerClass">
+    <app-topbar></app-topbar>
+    <app-sidebar></app-sidebar>
+    <div class="introScreen">
+        <span  ngClass="animate-fadein animate-duration-1000" class="introText text-7xl text-white px-1">
+            I am a graphic designer
+        </span>
+    </div>
+
+    <div id="about" class="layout-main-container" [ngStyle]="{'background-color': myBackgroundColour}">
+        <div class="layout-main">
+            <div class="grid grid-cols-12 md:col-span-6 gap-8">
+                <!-- <app-stats-widget class="contents" /> -->
+                <div class="col-span-12">
+                    <app-about-widget />
+                </div>
+
+                <div  class="col-span-12 flex-col inline-flex md:flex-row items-center">
+                    <app-design-widget class="md:w-8/12 w-full justify-center flex" />
+                    <app-expertise-widget id="skills" class="md:w-1/2 w-full" />
+                </div>
+            </div>
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+
+     <div class="col-span-12 softSkills">
+        <app-softskills-widget />
+    </div>
+
+    <div id="myWork" class="layout-main-container3 bg-white dark:bg-slate-800 relative">
+        <div class="layout-main">
+            <div class="grid grid-cols-12 md:col-span-6">
+                 <div  class="col-span-12 font-semibold text-4xl text-center mt-28 mb-14">Gallery</div>
+                 <app-gallery-widget class="col-span-12 content"  />
+             </div>
+        </div>
+    </div>
+
+    <div id="contact" class="layout-main-container4 bg-white dark:bg-slate-800 relative">
+        <div class="layout-main">
+            <div class="grid grid-cols-12 md:col-span-6">
+                 <app-getintouch-widget class="col-span-12" />
+             </div>
+        </div>
+    </div>
+
+    <div id="stats" class="layout-main-container5 pb-36 bg-white dark:bg-slate-800 relative">
+        <div class="layout-main">
+             <div class="grid grid-cols-12 md:col-span-6">
+                 <div  class="col-span-12 font-semibold text-4xl text-center mt-28 mb-14 myWorkText">My work is being noticed</div>
+                 <app-stats-widget2 class="contents stats2 justify-center" />
+             </div>
+        </div>
+    </div>
+
+    <app-footer></app-footer>
+    <!-- <div class="layout-mask animate-fadein"></div> -->
+</div>

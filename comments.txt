@@ -1,0 +1,74 @@
+if [(ngModel)] doesn't work you need to add
+            import { FormsModule } from '@angular/forms';
+to this module
+==================================================
+style
+
+[styleClass]=" darkMode ? 'myChipDark': 'myChipLight'"
+[tableStyle]="{'min-width': '50rem'}"
+[style]="{width: '450px'}"
+[class]="{ 'text-white' : darkMode }"
+[class]="{ 'opacity-50' : node.data.awayTeam.goals < node.data.homeTeam.goals }"
+[ngClass]="{ 'ng-invalid ng-dirty' : !canSubmitPasswordSignIn && canSubmitPasswordSignIn != null }"
+[ngClass]="{ 'line-through' : node.data.awayTeam.goals > node.data.homeTeam.goals }"
+[ngClass]="!darkMode ? 'border-bottom-1 border-gray-300' : null"
+
+
+==================================================
+HTML tag
+
+alt="{{ game.city }}
+[type]="selectedGraph != null ? selectedGraph : 'line'"
+=================================================
+
+valueColor="var(--cyan-300)"
+
+=================================================
+remove whole line with specific text:
+^.*dateAdded.*?\n  -> date added
+
+
+:host ::ng-deep .lightgray .p-dialog-header {
+  background-color: lightgray;
+}
+:host ::ng-deep .lightgray .p-dialog-content {
+  background-color: lightgray;
+}
+:host ::ng-deep .lightgray .p-dialog-footer {
+  background-color: lightgray;
+}
+
+[ngStyle]="{'background-color': myBackgroundColour}"
+<div [ngStyle]="{backgroundColor:'var(--highlight-bg)', color: 'var(--highlight-text-color)', borderRadius: 'var(--border-radius)', padding: '3rem'}">Highlighted Item</div>
+<div [ngStyle]="{backgroundColor:'var(--primary-color)', color: 'var(--primary-color-text)', borderRadius: 'var(--border-radius)', padding: '3rem'}">Primary Color</div>
+===============================================
+enable ssr
+
+  "outputMode": "server",
+                      "ssr": {
+                        "entry": "src/server.ts"
+                      }
+===============================================
+
+if NullInjectorError: No provider for _PhotoService!
+
+use: providers
+ standalone: true,
+    selector: 'app-gallery-widget',
+    imports: [CommonModule, ScrollTopModule, GalleriaModule],
+    providers: [PhotoService],    <------------ use this
+    template: `
+
+
+…or create a new repository on the command line
+echo "# i-am-designer" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/rob-digital/i-am-designer.git
+git push -u origin main
+…or push an existing repository from the command line
+git remote add origin https://github.com/rob-digital/i-am-designer.git
+git branch -M main
+git push -u origin main

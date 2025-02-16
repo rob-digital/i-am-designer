@@ -1,0 +1,97 @@
+.layout-main-container
+ {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+    padding: 6rem 2rem 2rem 2rem;
+    transition: margin-left var(--layout-section-transition-duration);
+}
+
+.layout-main {
+    flex: 1 1 auto;
+    padding-bottom: 2rem;
+}
+
+// .designWidget {
+//     background-image: url(../images/design.png);
+// }
+
+
+
+.designWidget {
+    background-color: #3083c3;
+    background-image: linear-gradient(225deg, #3083c3 0%, #784BA0 50%, #b22384 100%);
+
+
+}
+
+.softSkills {
+    background-color: #FF3CAC;
+// background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+background-color: #b22384;
+background-image: linear-gradient(225deg, #b22384 0%, #784BA0 50%, #2B86C5 100%);
+
+
+}
+
+.getInTouch {
+    // background-color: rgba(15, 15, 15, 0.5);
+
+    .inTouchText {
+        min-height: 150px;
+    }
+}
+
+.mySidebar {
+    // background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    border-bottom-right-radius: var(--content-main-border-radius) !important;
+    border-top-right-radius: var(--content-main-border-radius) !important;
+}
+
+#target1 {
+    background-color: #4158D0;
+background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
+}
+
+.principalButton {
+    max-width: 85%;
+
+    button {
+        width: 250px;
+        background-color: #B22384;
+        color: #fff;
+    }
+}
+
+.myFooter {
+    margin-top: -5vh;
+    width: 100%;
+    border-top-left-radius: var(--content-main-border-radius);
+    border-top-right-radius: var(--content-main-border-radius);
+    // position: fixed;
+    // height: 50px;
+    // background-color: red;
+    // bottom: 0px;
+    // left: 0px;
+    // right: 0px;
+    // margin-bottom: 0px;
+}
+
+.galleryThumbnails {
+    max-width: 80%;
+    margin-left: 10%;
+    justify-content: center;
+    background: transparent !important;
+    div:first-child {
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+// .layout-main-container5 {
+//     margin-bottom: 1rem;
+// }
